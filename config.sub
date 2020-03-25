@@ -291,6 +291,7 @@ case $basic_machine in
 	| mipstx39 | mipstx39el \
 	| mn10200 | mn10300 \
 	| moxie \
+	| rsrc \
 	| mt \
 	| msp430 \
 	| nds32 | nds32le | nds32be \

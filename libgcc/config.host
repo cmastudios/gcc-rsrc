@@ -115,6 +115,8 @@ frv*)	cpu_type=frv
 	;;
 moxie*)	cpu_type=moxie
 	;;
+rsrc*)	cpu_type=rsrc
+	;;
 i[34567]86-*-*)
 	cpu_type=i386
 	;;
@@ -869,6 +871,10 @@ mn10300-*-*)
 	;;
 moxie-*-elf | moxie-*-uclinux* | moxie-*-rtems*)
 	tmake_file="$tmake_file moxie/t-moxie t-softfp-sfdf t-softfp-excl t-softfp"
+	extra_parts="$extra_parts crti.o crtn.o"
+	;;
+rsrc-*-elf)
+	tmake_file="$tmake_file rsrc/t-rsrc t-softfp-sfdf t-softfp-excl t-softfp"
 	extra_parts="$extra_parts crti.o crtn.o"
 	;;
 msp430*-*-elf)

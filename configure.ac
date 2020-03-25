@@ -990,6 +990,9 @@ case "${target}" in
   moxie-*-*)
     noconfigdirs="$noconfigdirs gprof"
     ;;
+  rsrc-*-*)
+    noconfigdirs="$noconfigdirs gprof ${libgcj} target-libssp target-libstdc++-v3"
+    ;;
   h8300*-*-*)
     noconfigdirs="$noconfigdirs target-libgloss"
     ;;
